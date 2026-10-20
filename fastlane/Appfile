@@ -1,0 +1,4 @@
+# Fill in before running `fastlane beta`. Values are read from the environment, never committed.
+app_identifier(ENV["FT_APP_IDENTIFIER"])
+apple_id(ENV["FT_APPLE_ID"])
+team_id(ENV["FT_TEAM_ID"])

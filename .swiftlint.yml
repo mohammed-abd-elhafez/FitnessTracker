@@ -1,0 +1,33 @@
+included:
+  - FitnessTracker
+  - Tests
+
+opt_in_rules:
+  - force_unwrapping
+  - fatal_error_message
+  - empty_count
+  - closure_spacing
+
+custom_rules:
+  no_print:
+    name: "No print"
+    regex: '\bprint\s*\('
+    message: "Use os.Logger instead of print."
+    severity: error
+    excluded: "Tests"
+
+force_unwrapping: error
+force_try: error
+force_cast: error
+line_length:
+  warning: 120
+  error: 160
+file_length:
+  warning: 400
+  error: 800
+function_body_length:
+  warning: 50
+type_body_length:
+  warning: 300
+nesting:
+  type_level: 2

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FitnessTracker</title>
+<meta name="description" content="A private, offline-first iOS fitness tracker built with SwiftUI, SwiftData and HealthKit.">
+<style>
+  :root { --bg:#fff; --fg:#14181f; --muted:#5b6472; --card:#f3f5f8; --accent:#0a7cff; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#0e1116; --fg:#eef1f5; --muted:#9aa4b2; --card:#181d25; --accent:#4da3ff; } }
+  * { box-sizing: border-box; }
+  body { margin:0; font:17px/1.6 -apple-system, system-ui, "Segoe UI", sans-serif; background:var(--bg); color:var(--fg); }
+  main { max-width:720px; margin:0 auto; padding:48px 16px 64px; }
+  h1 { font-size:2.2rem; margin:0 0 8px; }
+  p.lead { color:var(--muted); font-size:1.1rem; margin:0 0 32px; }
+  ul { padding-inline-start:1.2rem; }
+  .card { background:var(--card); border-radius:16px; padding:20px 24px; margin:0 0 20px; }
+  a { color:var(--accent); }
+  footer { color:var(--muted); font-size:.9rem; margin-top:40px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>FitnessTracker</h1>
+  <p class="lead">Steps, workouts and daily goals in one place. Private by design, English and Arabic (RTL).</p>
+
+  <section class="card">
+    <h2>Features</h2>
+    <ul>
+      <li>Daily dashboard with progress rings from Apple Health (steps, distance, active energy)</li>
+      <li>Log workouts, including strength sets, with edit and delete</li>
+      <li>Daily goals, streaks, weekly and monthly charts with VoiceOver support</li>
+      <li>Daily reminder and a home-screen widget</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Built with</h2>
+    <p>Swift 6, SwiftUI, SwiftData, HealthKit, Swift Charts, WidgetKit. MVVM with a simplified Clean Architecture and no third-party dependencies.</p>
+  </section>
+
+  <section class="card">
+    <h2>Project status</h2>
+    <p>The source is published for review and development. The Xcode app, test and widget targets still need to be created in Xcode on macOS before building or running the app.</p>
+  </section>
+
+  <p><a href="https://github.com/mohammed-abd-elhafez/FitnessTracker">Source on GitHub</a> · <a href="privacy.html">Privacy policy</a> · <a href="https://github.com/mohammed-abd-elhafez/FitnessTracker/blob/main/CODE_REVIEW.md">Code review</a></p>
+
+  <footer>Not a medical device. For general fitness tracking only.</footer>
+</main>
+</body>
+</html>

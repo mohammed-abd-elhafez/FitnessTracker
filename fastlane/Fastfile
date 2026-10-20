@@ -1,0 +1,18 @@
+default_platform(:ios)
+
+platform :ios do
+  desc "Run unit and UI tests"
+  lane :test do
+    run_tests(
+      project: "FitnessTracker.xcodeproj",
+      scheme: "FitnessTracker",
+      devices: ["iPhone 16"]
+    )
+  end
+
+  desc "Build and upload to TestFlight (needs App Store Connect API key in env)"
+  lane :beta do
+    build_app(project: "FitnessTracker.xcodeproj", scheme: "FitnessTracker")
+    upload_to_testflight(skip_waiting_for_build_processing: true)
+  end
+end
