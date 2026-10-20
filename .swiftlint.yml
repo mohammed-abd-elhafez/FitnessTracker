@@ -19,6 +19,10 @@ custom_rules:
 force_unwrapping: error
 force_try: error
 force_cast: error
+identifier_name:
+  min_length:
+    warning: 2
+    error: 2
 line_length:
   warning: 120
   error: 160

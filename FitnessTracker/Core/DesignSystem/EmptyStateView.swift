@@ -5,7 +5,7 @@ struct EmptyStateView: View {
     let title: LocalizedStringKey
     let message: LocalizedStringKey
     let systemImage: String
-    var verbatimMessage: String? = nil
+    var verbatimMessage: String?
     var actionTitle: LocalizedStringKey?
     var action: (() -> Void)?
 

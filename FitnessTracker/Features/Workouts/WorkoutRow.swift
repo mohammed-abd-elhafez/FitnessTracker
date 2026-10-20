@@ -11,11 +11,17 @@ struct WorkoutRow: View {
             Spacer()
             VStack(alignment: .trailing) {
                 Text(Measurement(value: Double(workout.durationMinutes), unit: UnitDuration.minutes)
-                    .formatted(.measurement(width: .abbreviated, numberFormatStyle: .number.precision(.fractionLength(0)))))
+                    .formatted(.measurement(
+                        width: .abbreviated,
+                        numberFormatStyle: .number.precision(.fractionLength(0))
+                    )))
                     .font(.subheadline)
                 if let calories = workout.caloriesBurned {
                     Text(Measurement(value: calories, unit: UnitEnergy.kilocalories)
-                        .formatted(.measurement(width: .abbreviated, numberFormatStyle: .number.precision(.fractionLength(0)))))
+                        .formatted(.measurement(
+                            width: .abbreviated,
+                            numberFormatStyle: .number.precision(.fractionLength(0))
+                        )))
                         .font(.caption)
                 }
                 Text(workout.startDate, format: .dateTime.day().month().hour().minute())
