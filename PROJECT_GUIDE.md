@@ -1,4 +1,4 @@
-# CLAUDE.md: FitnessTracker (iOS)
+# FitnessTracker Project Guide (iOS)
 
 This file is the persistent context for this repository. Read it fully before making changes. The full product spec and learning roadmap live in `docs/FitnessTracker-Project-Guide.md`; treat that document as the source of truth for scope and architecture.
 

@@ -1,7 +1,7 @@
 # FitnessTracker
 
 Native iOS fitness tracker (SwiftUI, SwiftData, HealthKit). Offline-first, privacy-first, Arabic + English.
-Spec and roadmap: [docs/FitnessTracker-Project-Guide.md](docs/FitnessTracker-Project-Guide.md). Working rules: [CLAUDE.md](CLAUDE.md).
+Spec and roadmap: [docs/FitnessTracker-Project-Guide.md](docs/FitnessTracker-Project-Guide.md). Working rules: [PROJECT_GUIDE.md](PROJECT_GUIDE.md).
 
 ## Requirements
 
@@ -44,4 +44,4 @@ All roadmap code is written but **has never been compiled or run** (authored wit
 
 ## Layout
 
-See the project structure section in [CLAUDE.md](CLAUDE.md).
+See the project structure section in [PROJECT_GUIDE.md](PROJECT_GUIDE.md).

@@ -474,7 +474,7 @@ final class HealthKitService: HealthDataRepository {
 - CloudKit sync بين iPhone وiPad.
 - Live Activities أثناء التمرين.
 - Apple Watch companion.
-- تكامل مع Claude API لإنتاج ملخص أسبوعي ونصائح مخصصة.
+- تكامل اختياري لإنتاج ملخص أسبوعي ونصائح مخصصة.
 
 ---
 
@@ -589,7 +589,7 @@ extension Logger {
 | **v1.2** | النوم والوزن، تصدير CSV |
 | **v2.0** | CloudKit Sync، Live Activities |
 | **v2.1** | Apple Watch App |
-| **v3.0** | AI Insights (Claude API) وخطط تمرين مخصصة |
+| **v3.0** | تحليلات تقدم متقدمة وخطط تمرين مخصصة |
 
 ---
 

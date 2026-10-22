@@ -32,7 +32,7 @@ As checked in:
 
 ### 2. Production source violates the declared Sendable boundary
 
-**References:** `FitnessTracker/Domain/Repositories/HealthDataRepository.swift:3-9`, `FitnessTracker/Data/Repositories/MockRepositories.swift:3-10`, `CLAUDE.md:78-79`
+**References:** `FitnessTracker/Domain/Repositories/HealthDataRepository.swift:3-9`, `FitnessTracker/Data/Repositories/MockRepositories.swift:3-10`, `PROJECT_GUIDE.md:78-79`
 
 `HealthDataRepository` refines `Sendable`, but `MockHealthRepository` is a value type conforming to that protocol while storing `var error: (any Error)?`. Under Swift 6 complete strict-concurrency checking, this is expected to produce a non-Sendable stored-property/conformance diagnostic. The mock lives under the application source tree, so it is not isolated to tests.
 
